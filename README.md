@@ -5,6 +5,13 @@ indpendent 7 segment displays, using transistors or mosfets to control the
 drain pins, et cetera. This is just an idea I have based on other things I
 have built in the past.
 
+## Real Time Clock
+
+I added a DS1307 as a real time clock. We can use
+[Kevin's RTC library](https://github.com/kgmossey/RTC_DS1307) to drive it.
+I have not hooked up the `SQW/OUT` pin, but we might want to add a breakout
+header/pin for it for future expansion.
+
 ## Driving the display
 
 The idea here is to drive a 4 digit 7 segment display from an Arduino.
