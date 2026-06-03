@@ -18,7 +18,7 @@ The idea here is to drive 4 individual digit 7 segment displays; I chose the
 [XL-DA3161SRBC](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8903/XL-DA3161SRBC.pdf)
 because it looked reasonable in terms of cost and simplicty. We'll drive all of
 them from an Arduino; each digit will have a dedicated shift register
-[TPIC6595](https://www.ti.com/lit/ds/symlink/tpic6595.pdf) associated with it,
+[SN74HC595N](https://www.ti.com/lit/ds/symlink/sn74hc595.pdf) associated with it,
 connected so that the overflow output from one leads to the input of the next.
 
 The display should be configured like this (Note that it's certainly possible to
